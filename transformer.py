@@ -14,7 +14,7 @@ class Transformer:
         self
 
     def read_orders(self) -> pd.DataFrame:
-        orders = pd.read_csv('/Users/mhaikunchorn/Desktop/intern-tech-tests/data-tech-test/orders.csv', header=0)
+        orders = pd.read_csv('orders.csv', header=0)
         return orders
 
     def enrich_orders(self, orders: pd.DataFrame, col_name: str, value: List[str]) -> pd.DataFrame:
